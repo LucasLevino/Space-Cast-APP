@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -18,6 +19,13 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
 
   @override
   Widget build(BuildContext context) {
+
+    Firestore.instance.collection('midia').where('category_midia', isEqualTo: 'Filme').getDocuments().then((value) => {
+      value.documents.forEach((element) {
+        print(element.data);
+      })
+    });
+
     return SafeArea(
       child: Scaffold(
         body: Container(

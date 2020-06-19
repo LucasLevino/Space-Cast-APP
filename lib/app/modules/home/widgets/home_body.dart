@@ -1,7 +1,8 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:space_cast/app/modules/home/styles/home_styles.dart';
 import 'package:space_cast/app/modules/home/widgets/list_category.dart';
+import 'package:space_cast/app/modules/home/widgets/list_midia.dart';
 import 'package:space_cast/app/shared/assets/styles/main_styles.dart';
 import 'package:space_cast/app/shared/widgets/app_titulo.dart';
 
@@ -12,6 +13,12 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    var snapshots = Firestore.instance
+    .collection('midia')
+    .where('category_midia', isEqualTo: 'Filme')
+    .snapshots();
+
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,13 +42,11 @@ class Body extends StatelessWidget {
 
               SizedBox(height: 16),
 
-             
-
-
-              
+              ListMidia(snapshots: snapshots),
 
           ]
         ),
       );
   }
 }
+
