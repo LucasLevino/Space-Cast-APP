@@ -28,21 +28,24 @@ class Body extends StatelessWidget {
             // Lista de Categoria
               CategoryList(),
 
+            // Espacamento 
               SizedBox(height: 32),
               
+            // Lista de Filmes 
               MidiaList(
                 category: "Filmes",
               ),
 
+            // Espacamento 
               SizedBox(height: 24),
 
-               MidiaList(
+            // Lista de Series 
+              MidiaList(
                 category: "Series",
               ),
 
-
+            // Espacamento 
               SizedBox(height: 24),
-
 
           ]
         ),

@@ -21,6 +21,9 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  #http: ^0.12.1
+  #url_launcher: ^5.4.11
+  #webview_flutter: ^0.3.22+1
   cloud_firestore: ^0.13.6
   google_fonts: ^1.1.0
   google_sign_in: ^4.5.1
