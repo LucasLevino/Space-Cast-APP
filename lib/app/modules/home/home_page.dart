@@ -20,7 +20,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
   @override
   Widget build(BuildContext context) {
 
-    Firestore.instance.collection('midia').where('category_midia', isEqualTo: 'Filme').getDocuments().then((value) => {
+    Firestore.instance.collection('midia').where('category_midia', isEqualTo: 'Serie').getDocuments().then((value) => {
       value.documents.forEach((element) {
         print(element.data);
       })

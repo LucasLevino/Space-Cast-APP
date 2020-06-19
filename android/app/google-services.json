@@ -1,1 +1,48 @@
-
+{
+  "project_info": {
+    "project_number": "66203632532",
+    "firebase_url": "https://spacecast-f6b89.firebaseio.com",
+    "project_id": "spacecast-f6b89",
+    "storage_bucket": "spacecast-f6b89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66203632532:android:30351b9758f1fc71190581",
+        "android_client_info": {
+          "package_name": "com.stream.space_cast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "66203632532-tfn5olcajl042qss8l1qjt9a0g0v5thn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stream.space_cast",
+            "certificate_hash": "700d4e5ab6db31af8fbd20040f35beb0049ca38e"
+          }
+        },
+        {
+          "client_id": "66203632532-v9aosv0c6k2gpudp6qsj8gj5lh42uskb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0CuJXiyzjaYeofMmxwbU7DFT2XHlj6IA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "66203632532-v9aosv0c6k2gpudp6qsj8gj5lh42uskb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
