@@ -3,6 +3,7 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:space_cast/app/modules/login/widgets/google_login.dart';
 import 'package:space_cast/app/modules/login/widgets/logo_login.dart';
 import 'package:space_cast/app/shared/assets/styles/main_styles.dart';
+import 'package:space_cast/app/shared/widgets/app_titulo.dart';
 import 'login_controller.dart';
 
   
@@ -37,10 +38,8 @@ class _LoginPageState extends ModularState<LoginPage, LoginController> {
             
             children:[
               
-                Row(  children: <Widget>[
-                  Text('Space Cast',style: h1_text),
-                  ],
-                ),
+              // Titulo   
+                Titulo_App(),
 
               // Espacamento  
                 SizedBox(height: 32),
@@ -61,5 +60,7 @@ class _LoginPageState extends ModularState<LoginPage, LoginController> {
     );
   }
 }
+
+
 
 

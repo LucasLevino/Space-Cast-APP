@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:space_cast/app/modules/home/widgets/home_body.dart';
+import 'package:space_cast/app/shared/assets/styles/main_styles.dart';
 import 'home_controller.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,13 +18,25 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Column(
-        children: <Widget>[],
+    return SafeArea(
+      child: Scaffold(
+        body: Container(
+          alignment: Alignment.topCenter,
+          decoration: BoxDecoration(
+             color: light_color
+          ),
+
+          padding: EdgeInsets.only(
+            top: 32,
+            left: 24,
+            right: 24,
+          ),
+
+          child: Body(),
+        ),
       ),
     );
   }
 }
+
+
