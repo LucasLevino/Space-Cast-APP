@@ -8,8 +8,9 @@ class Titulo_App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(  children: <Widget>[
-      Text('Space Cast',style: h1_text),
+    return Row(  
+      children: <Widget>[
+        Text('Space Cast',style: h1_text),
       ],
     );
   }

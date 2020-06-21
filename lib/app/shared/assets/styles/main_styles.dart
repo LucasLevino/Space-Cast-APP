@@ -10,6 +10,7 @@ const grey_30_color = Color(0xFFB2B2B2);
 const light_color = Color(0xFFF5F5F5);
 
 // Tipografia
-
 TextStyle h1_text = GoogleFonts.roboto(textStyle: TextStyle(color: dark_color, fontSize: 56,),);
 TextStyle h2_text = GoogleFonts.roboto(textStyle: TextStyle(color: dark_color, fontSize: 40,),);
+
+

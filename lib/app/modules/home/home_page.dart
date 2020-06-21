@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:space_cast/app/modules/home/styles/home_styles.dart';
 import 'package:space_cast/app/modules/home/widgets/home_body.dart';
 import 'package:space_cast/app/shared/assets/styles/main_styles.dart';
 import 'home_controller.dart';
@@ -20,7 +21,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
   @override
   Widget build(BuildContext context) {
 
-    Firestore.instance.collection('midia').where('category_midia', isEqualTo: 'Serie').getDocuments().then((value) => {
+    Firestore.instance.collection('midia').where('category_midia', isEqualTo: 'Series').getDocuments().then((value) => {
       value.documents.forEach((element) {
         print(element.data);
       })
@@ -34,11 +35,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
              color: light_color
           ),
 
-          padding: EdgeInsets.only(
-            top: 32,
-            left: 24,
-            right: 24,
-          ),
+          padding: pad_main,
 
           child: Body(),
         ),

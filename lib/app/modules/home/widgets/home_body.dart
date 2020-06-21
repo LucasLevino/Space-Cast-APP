@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:space_cast/app/modules/home/styles/home_styles.dart';
+import 'package:space_cast/app/modules/home/widgets/header_home.dart';
 import 'package:space_cast/app/modules/home/widgets/list_category.dart';
-import 'package:space_cast/app/modules/home/widgets/list_midia.dart';
 import 'package:space_cast/app/modules/home/widgets/midia_list.dart';
-import 'package:space_cast/app/shared/widgets/app_titulo.dart';
 
 class Body extends StatelessWidget {
   const Body({
@@ -19,8 +17,9 @@ class Body extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
 
           children: [
+
             // Titulo   
-              Titulo_App(),
+              HeaderSpace(),
 
             // Espacamento 
               SizedBox(height: 48),
@@ -47,10 +46,16 @@ class Body extends StatelessWidget {
             // Espacamento 
               SizedBox(height: 24),
 
+              // Lista de Ao Vivo 
+              MidiaList(
+                category: "Series",
+              ),
+
+            // Espacamento 
+              SizedBox(height: 24),
+
           ]
         ),
       );
   }
 }
-
-

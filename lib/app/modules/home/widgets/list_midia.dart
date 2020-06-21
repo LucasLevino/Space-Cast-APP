@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:space_cast/app/modules/detail/detail_page.dart';
 
 class ListMidia extends StatelessWidget {
     final String category;
@@ -66,11 +67,21 @@ class ListMidia extends StatelessWidget {
                           image: new NetworkImage( item['img_midia'] ),
                           fit: BoxFit.fill,
                       )
-                    )
+                    ),
+
+                    child: SizedBox.expand(
+                      child: FlatButton(
+                        onPressed: () {
+                           Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                            builder: (context) => DetailPage()));
+                        }, 
+                      ),
+                    ),
                   );
                 }
               );  
-
             } 
           ),
     );

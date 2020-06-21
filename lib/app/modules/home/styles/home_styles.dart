@@ -8,3 +8,6 @@ TextStyle selected_category_text = GoogleFonts.roboto(textStyle: TextStyle(color
 TextStyle category_text = GoogleFonts.roboto(textStyle: TextStyle(color: dark_color, fontSize: 12,),);
 
 TextStyle category_title = GoogleFonts.roboto(textStyle: TextStyle(color: dark_color, fontSize: 16, fontWeight: FontWeight.w500),);
+
+// Espacamento
+var pad_main = EdgeInsets.only(top: 32,left: 24,right: 24,);
