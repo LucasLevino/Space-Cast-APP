@@ -21,11 +21,11 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
   @override
   Widget build(BuildContext context) {
 
-    Firestore.instance.collection('midia').where('category_midia', isEqualTo: 'Series').getDocuments().then((value) => {
-      value.documents.forEach((element) {
-        print(element.data);
-      })
-    });
+    //Firestore.instance.collection('midia').where('category_midia', isEqualTo: 'Series').getDocuments().then((value) => {
+    //  value.documents.forEach((element) {
+    //    print(element.data);
+    //  })
+    //});
 
     return SafeArea(
       child: Scaffold(
